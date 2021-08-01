@@ -1,3 +1,4 @@
-# My Pet project with React and first step
+# My Pet project with React
 
 base structure Header,Profile(main content),Footer
+"# ReactSofa" 
