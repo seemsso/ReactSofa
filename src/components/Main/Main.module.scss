@@ -1,0 +1,11 @@
+@mixin fcolumn {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  overflow: hidden;
+  max-width: 1400px;
+  @include fcolumn;
+  margin: 0 auto;
+  min-height: 100vh;
+}

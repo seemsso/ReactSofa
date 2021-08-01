@@ -1,0 +1,28 @@
+.container {
+  background-color: hsl(219, 79%, 66%);
+  padding: 20px;
+  margin-top: auto;
+}
+// .header {
+//   background-color: hsl(327, 25%, 50%);
+//   padding: 20px;
+//   @include fbetween;
+//   align-items: center;
+//   background-image: url("https://images.unsplash.com/photo-1616627974469-aeadf7890ed4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fHNvZmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+// }
+// .title {
+//   font-family: "Cormorant Garamond", serif;
+//   font-style: italic;
+//   font-weight: bold;
+//   font-size: 20px;
+// }
+// .ul {
+//   @include fbetween;
+//   & li {
+//     @include fonts;
+//     padding: 20px 60px;
+//   }
+// }
+// .tel {
+//   @include fonts;
+// }

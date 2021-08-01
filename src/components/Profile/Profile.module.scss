@@ -1,0 +1,13 @@
+@mixin grid {
+  display: grid;
+  gap: 40px;
+}
+.container {
+  background-color: hsl(25, 75%, 47%);
+  padding: 20px;
+  @include grid;
+  grid-column: auto;
+  & section {
+    background-color: antiquewhite;
+  }
+}
