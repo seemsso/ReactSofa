@@ -14,11 +14,12 @@
   text-decoration: underline hsl(278, 65%, 58%);
 }
 $fz18: 18px;
-.header {
+.container {
   padding: 20px;
   @include fbetween;
   align-items: flex-start;
   background-image: url("https://images.unsplash.com/photo-1616464916566-c09efd4272a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1861&q=80");
+
   background-repeat: no-repeat;
   background-size: 1400px 900px;
   min-height: 900px;

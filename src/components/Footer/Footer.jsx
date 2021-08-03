@@ -5,11 +5,11 @@ const Footer = () => {
     <div className={f.container}>
       <nav className={f.nav}>
         <ul className={f.list}>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+          <li className="li_1">1</li>
+          <li className="li_2">2</li>
+          <li className="li_3">3</li>
+          <li className="li_4">4</li>
+          <li className="li_5">5</li>
         </ul>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
         dolores odit ipsa doloremque quos magnam asperiores obcaecati commodi

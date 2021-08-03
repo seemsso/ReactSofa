@@ -1,13 +1,75 @@
 @mixin grid {
   display: grid;
-  gap: 40px;
+  gap: 20px;
 }
-.container {
-  background-color: hsl(25, 75%, 47%);
+@mixin h3 {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.main {
+  background-color: hsl(48, 61%, 83%);
   padding: 20px;
+  border-radius: 20px;
+  max-width: 1400px;
+}
+.container1 {
+  font-size: 15px;
   @include grid;
-  grid-column: auto;
-  & section {
-    background-color: antiquewhite;
+  grid-template-areas:
+    "chair1 chair2  chair3"
+    "sofa1  sofa1   sofa1 ";
+  grid-auto-columns: minmax(50px, 400px);
+  justify-content: center;
+  max-width: 1400px;
+  & > div {
+    background-color: hsl(201, 52%, 58%);
   }
+}
+.h3_container1 {
+  @include h3;
+  margin: 50px 0 30px 0;
+}
+.chair1 {
+  grid-area: chair1;
+}
+.chair2 {
+  grid-area: chair2;
+}
+.chair3 {
+  grid-area: chair3;
+}
+.sofa1 {
+  grid-area: sofa1;
+}
+.container2 {
+  @include grid;
+  max-width: 1300px;
+  padding-left: 60px;
+  grid-template-areas: "sofa_img message";
+  justify-content: center;
+  & h3 {
+    @include h3;
+    padding-bottom: 15px;
+  }
+  & p {
+    font-size: 15px;
+    font-style: italic;
+    padding: 0 20px;
+  }
+}
+.button {
+  @include h3;
+}
+.sofa_img {
+  grid-area: sofa_img;
+}
+
+.message {
+  border-radius: 20px;
+  grid-area: message;
+  box-shadow: 3px 3px 3px hsl(300, 23%, 49%);
+  background-color: hsl(160, 72%, 75%);
 }
