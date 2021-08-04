@@ -3,22 +3,26 @@ import f from "./Footer.module.scss";
 const Footer = () => {
   return (
     <div className={f.container}>
-      <nav className={f.nav}>
-        <ul className={f.list}>
-          <li className="li_1">1</li>
-          <li className="li_2">2</li>
-          <li className="li_3">3</li>
-          <li className="li_4">4</li>
-          <li className="li_5">5</li>
-        </ul>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-        dolores odit ipsa doloremque quos magnam asperiores obcaecati commodi
-        dolorum recusandae, id laboriosam laborum. Beatae, aspernatur. Deserunt
-        autem ex iure eum. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Aliquid molestias harum dolorum provident odit hic blanditiis quas
-        magni quidem vero numquam incidunt culpa adipisci accusamus, unde
-        eveniet obcaecati vitae? Unde.
-      </nav>
+      <header className={f.header}>
+        <div className={f.container}>
+          <div className={f.title}>MY SOFA | диваны и кресла</div>
+          <div className={f.nav}>
+            <nav>
+              <ul className={f.ul}>
+                <li>Каталог</li>
+                <li>О проекте</li>
+                <li>Доставка</li>
+                <li>Контакты</li>
+              </ul>
+            </nav>
+          </div>
+          <div className={f.icons}></div>
+          <div className={f.connection}>
+            <div className={f.tel}> 8-800-555-35-35</div>
+            <div className={f.call}>Контактный телефон</div>
+          </div>
+        </div>
+      </header>
     </div>
   );
 };

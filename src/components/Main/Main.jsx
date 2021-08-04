@@ -7,10 +7,9 @@ import Footer from "../Footer/Footer";
 const Main = () => {
   return (
     <div className={m.container}>
-      <Header className={m.header}></Header>
-
-      <Profile className={m.profile}></Profile>
-      <Footer className={m.footer}></Footer>
+      <Header></Header>
+      <Profile></Profile>
+      <Footer></Footer>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 @mixin grid {
   display: grid;
   gap: 20px;
+  max-width: 1400px;
+  justify-content: center;
 }
 @mixin h3 {
   font-size: 20px;
@@ -22,8 +24,6 @@
     "chair1 chair2  chair3"
     "sofa1  sofa1   sofa1 ";
   grid-auto-columns: minmax(50px, 400px);
-  justify-content: center;
-  max-width: 1400px;
   & > div {
     background-color: hsl(201, 52%, 58%);
   }
@@ -49,7 +49,6 @@
   max-width: 1300px;
   padding-left: 60px;
   grid-template-areas: "sofa_img message";
-  justify-content: center;
   & h3 {
     @include h3;
     padding-bottom: 15px;
@@ -59,9 +58,14 @@
     font-style: italic;
     padding: 0 20px;
   }
+  margin-bottom: 40px;
+}
+.my_data {
+  @include h3;
 }
 .button {
-  @include h3;
+  @include grid;
+  background-color: bisque;
 }
 .sofa_img {
   grid-area: sofa_img;
@@ -72,4 +76,30 @@
   grid-area: message;
   box-shadow: 3px 3px 3px hsl(300, 23%, 49%);
   background-color: hsl(160, 72%, 75%);
+}
+.discounts {
+  @include h3;
+}
+.container3 {
+  @include grid;
+  margin: 40px 0 40px 0;
+  gap: 130px;
+  & .chair_discounts {
+    grid-column: 1 / 2;
+  }
+  & .sofa_discounts {
+    grid-column: 2 / 3;
+  }
+}
+
+@media (max-width: 1399px) {
+  .container2 {
+    padding-left: 0px;
+  }
+  .container3 {
+    & .sale_img {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }

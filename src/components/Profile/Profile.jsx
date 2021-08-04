@@ -15,7 +15,9 @@ const Profile = () => {
             src="images/chair1.webp"
             alt="chair Purple"
           ></img>
-          <div>Кресло Purple</div>
+          <div>
+            <span>Кресло Purple</span>{" "}
+          </div>
         </div>
         <div className={prof.chair2}>
           <img
@@ -24,7 +26,9 @@ const Profile = () => {
             src="images/chair2.webp"
             alt="chair Spacious"
           ></img>
-          <div>Кресло Spacious</div>
+          <div>
+            <span>Кресло Spacious</span>{" "}
+          </div>
         </div>
         <div className={prof.chair3}>
           <img
@@ -33,16 +37,20 @@ const Profile = () => {
             src="images/chair3.webp"
             alt="chair Beige"
           ></img>
-          <div>Кресло Beige </div>
+          <div>
+            <span>Кресло Beige</span>{" "}
+          </div>
         </div>
         <div className={prof.sofa1}>
           <img
             height={613}
             widght={1240}
-            src="images/sofa1.webp"
+            src="images/sofa1_.webp"
             alt="sofa Broad"
           ></img>
-          <div>Кресло Broad </div>
+          <div>
+            <span>Диван Broad</span>{" "}
+          </div>
         </div>
       </div>
       <div>
@@ -61,7 +69,51 @@ const Profile = () => {
           <h3>О проекте</h3>
           <p>Данный проект сделан исключительно в образовательных целях.</p>
           <p>Если у Вас остались вопросы,свяжитесь со мной</p>
-          <div className={prof.button}>Мои данные</div>
+          <div className={prof.my_data}>Мои данные</div>
+          <div>
+            <button>Контакты</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 className={prof.discounts}>Предложения со скидкой!</h3>
+        <div className={prof.container3}>
+          <div className={prof.chair_discounts}>
+            <img
+              height={435}
+              widght={320}
+              src="images/chair7.webp"
+              alt="chair Rotating Beige"
+            ></img>
+            <img
+              height={63}
+              widght={116}
+              src="images/sale.jpg"
+              alt="sale 30%"
+            ></img>
+            <div>
+              <span>Кресло Rotating Beige</span> img
+            </div>
+          </div>
+          <div className={prof.sofa_discounts}>
+            <img
+              className={prof.sale_img}
+              height={435}
+              widght={555}
+              src="images/sofa4.webp"
+              alt="sofa Angular"
+            ></img>
+            <img
+              className={prof.sale_img}
+              height={63}
+              widght={116}
+              src="images/sale.jpg"
+              alt="sale 30%"
+            ></img>
+            <div>
+              <span>Диван Angular</span>{" "}
+            </div>
+          </div>
         </div>
       </div>
     </main>
