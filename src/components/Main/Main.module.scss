@@ -1,11 +1,16 @@
-@mixin fcolumn {
-  display: flex;
-  flex-direction: column;
+@mixin body {
+  background-color: hsl(48, 61%, 83%);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 1400px;
+  min-height: 100vh;
 }
 .container {
   overflow: hidden;
   max-width: 1400px;
-  @include fcolumn;
   margin: 0 auto;
   min-height: 100vh;
+}
+.wrapper {
+  @include body;
 }

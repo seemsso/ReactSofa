@@ -18,11 +18,9 @@ $fz18: 18px;
   padding: 20px;
   @include fbetween;
   align-items: flex-start;
-  background-image: url("https://images.unsplash.com/photo-1616464916566-c09efd4272a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1861&q=80");
-
-  background-repeat: no-repeat;
-  background-size: 1400px 900px;
-  min-height: 900px;
+  min-height: 150px;
+  background-color: hsl(56, 93%, 83%);
+  border-radius: 20px;
 }
 .title {
   font-family: "Cormorant Garamond", serif;
@@ -30,6 +28,7 @@ $fz18: 18px;
   font-weight: bold;
   font-size: 25px;
   padding-top: 15px;
+  @include textdecor;
 }
 .ul {
   @include fbetween;
@@ -38,10 +37,20 @@ $fz18: 18px;
     padding: 20px 60px;
     font-size: 18px;
   }
-  &:hover > li {
+  .catalog:hover {
+    @include textdecor;
+  }
+  .aproject:hover {
+    @include textdecor;
+  }
+  .delivery:hover {
+    @include textdecor;
+  }
+  .contacts:hover {
     @include textdecor;
   }
 }
+
 .connection {
   text-align: center;
   border-radius: 10px;
