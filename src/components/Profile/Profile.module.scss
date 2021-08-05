@@ -46,8 +46,8 @@
 }
 .container2 {
   @include grid;
-  max-width: 1300px;
-  padding-left: 60px;
+  max-width: 1400px;
+  padding: 0 40px;
   grid-template-areas: "sofa_img message";
   & h3 {
     @include h3;

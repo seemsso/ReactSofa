@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import h from "./Header.module.scss";
 // import c from "../Catalog/Catalog"
 
@@ -8,13 +8,17 @@ const Header = () => {
       <header className={h.header}>
         <div className={h.container}>
           <div className={h.title}>
-            <Link to="/main"> MY SOFA | диваны и кресла </Link>
+            <NavLink to="/main" activeClassName={h.active_main}>
+              MY SOFA | диваны и кресла
+            </NavLink>
           </div>
           <div className={h.nav}>
             <nav>
               <ul className={h.ul}>
                 <li className={h.catalog}>
-                  <Link to="/catalog">Каталог</Link>
+                  <NavLink to="/catalog" activeClassName={h.active_catalog}>
+                    Каталог
+                  </NavLink>
                 </li>
                 <li className={h.aproject}>О проекте</li>
                 <li className={h.contacts}>Контакты</li>
@@ -23,7 +27,9 @@ const Header = () => {
           </div>
           <div className={h.icons}></div>
           <div>
-            <Link to="/shopcart"> Корзина</Link>
+            <NavLink to="/shopcart" activeClassName={h.active_shopcart}>
+              Корзина
+            </NavLink>
           </div>
           <div className={h.connection}>
             <div className={h.tel}> 8-800-555-35-35</div>
