@@ -13,10 +13,10 @@ const Profile = () => {
             height={564}
             widght={400}
             src="images/chair1.webp"
-            alt="chair Purple"
+            alt="Кресло Purple"
           ></img>
           <div>
-            <span>Кресло Purple</span>{" "}
+            <span>Кресло Purple</span>
           </div>
         </div>
         <div className={prof.chair2}>
@@ -24,10 +24,10 @@ const Profile = () => {
             height={564}
             widght={400}
             src="images/chair2.webp"
-            alt="chair Spacious"
+            alt="Кресло Spacious"
           ></img>
           <div>
-            <span>Кресло Spacious</span>{" "}
+            <span>Кресло Spacious</span>
           </div>
         </div>
         <div className={prof.chair3}>
@@ -35,10 +35,10 @@ const Profile = () => {
             height={564}
             widght={400}
             src="images/chair3.webp"
-            alt="chair Beige"
+            alt="Кресло Beige"
           ></img>
           <div>
-            <span>Кресло Beige</span>{" "}
+            <span>Кресло Beige</span>
           </div>
         </div>
         <div className={prof.sofa1}>
@@ -46,10 +46,10 @@ const Profile = () => {
             height={613}
             widght={1240}
             src="images/sofa1_.webp"
-            alt="sofa Broad"
+            alt="Диван Broad"
           ></img>
           <div>
-            <span>Диван Broad</span>{" "}
+            <span>Диван Broad</span>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ const Profile = () => {
             height={435}
             widght={784}
             src="images/sofa_fun.webp"
-            alt="Sofa with plush froggy"
+            alt="Диван с игрушечным лягушонком"
           />
         </div>
         <div className={prof.message}>

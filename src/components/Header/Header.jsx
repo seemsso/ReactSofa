@@ -26,7 +26,7 @@ const Header = () => {
             </nav>
           </div>
           <div className={h.icons}></div>
-          <div>
+          <div className={h.shopcart}>
             <NavLink to="/shopcart" activeClassName={h.active_shopcart}>
               Корзина
             </NavLink>
