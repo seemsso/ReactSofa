@@ -12,6 +12,7 @@ const Main = () => {
       <div className={m.container}>
         <Header></Header>
         <div className={m.wrapper}>
+          <Route exact path="/" component={Profile} />
           <Route path="/main" component={Profile} />
           <Route path="/catalog" component={Catalog} />
           <Route path="/shopcart" component={ShoppingCart} />

@@ -1,0 +1,10 @@
+.cont_sofa {
+  background-color: hsl(184, 100%, 82%);
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  gap: 20px;
+  min-height: 100vh;
+}

@@ -18,18 +18,4 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 5fr;
-  min-height: 100vh;
-}
-.nav {
-  background-color: hsl(115, 100%, 88%);
-  padding: 20px;
-  border-radius: 10px;
-}
-.section {
-  background-color: hsl(184, 100%, 82%);
-  padding: 20px;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
 }

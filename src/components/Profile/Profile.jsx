@@ -92,7 +92,7 @@ const Profile = () => {
               alt="sale 30%"
             ></img>
             <div>
-              <span>Кресло Rotating Beige</span> img
+              <span>Кресло Rotating Beige</span>
             </div>
           </div>
           <div className={prof.sofa_discounts}>
