@@ -1,9 +1,35 @@
+$fs20: 20px;
+
+@mixin textcenter {
+  font-weight: bold;
+  text-align: center;
+}
+
 .cart {
-  display: flex;
+  min-height: 100vh;
 }
 .h2 {
-  font-size: 20px;
+  @include textcenter;
   font-style: italic;
-  font-weight: bold;
-  margin: 20px 0;
+  font-size: $fs20;
+  margin: 20px;
+}
+.list ul {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  @include textcenter;
+  & li {
+    font-size: $fs20 - 2px;
+  }
+  margin-bottom: 40px;
+}
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  & img {
+    width: 100%;
+  }
 }
