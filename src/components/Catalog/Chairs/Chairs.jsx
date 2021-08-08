@@ -3,9 +3,9 @@ import ch from "./Chairs.module.scss";
 const Chairs = () => {
   return (
     <div className={ch.cont_chairs}>
-      <base href="/"></base>
       <div className={ch.section}>
         <div>
+          <base href="/"></base>
           <img
             height={435}
             width={320}
@@ -49,15 +49,15 @@ const Chairs = () => {
             alt="Кресло Simpledark"
           ></img>
           <span>Кресло Simpledark</span>
-          <div>
-            <img
-              height={435}
-              width={320}
-              src="images/chair6.webp"
-              alt="Кресло Pink"
-            ></img>
-            <span>Кресло Pink</span>
-          </div>
+        </div>
+        <div>
+          <img
+            height={435}
+            width={320}
+            src="images/chair6.webp"
+            alt="Кресло Pink"
+          ></img>
+          <span>Кресло Pink</span>
         </div>
         <div>
           <img

@@ -9,6 +9,7 @@ import c from "./Catalog.module.scss";
 const Catalog = () => {
   return (
     <BrowserRouter>
+      <base href="/"></base>
       <div className={c.catalog}>
         <h2 className={c.h2}>Каталог</h2>
         <figure className={c.quote}>

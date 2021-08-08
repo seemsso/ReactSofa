@@ -3,8 +3,8 @@ import sof from "./Sofas.module.scss";
 const Sofas = () => {
   return (
     <div className={sof.cont_sofa}>
-      <base href="/"></base>
       <div>
+        <base href="/"></base>
         <img
           height={435}
           width={555}
