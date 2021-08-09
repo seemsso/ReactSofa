@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import n from "./Navigation.module.scss";
 
 const Navigation = () => {

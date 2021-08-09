@@ -1,5 +1,6 @@
-import prof from "./Profile.module.scss";
 import GoToCatalog from "./GoToCatalog/GoToCatalog";
+
+import prof from "./Profile.module.scss";
 
 const Profile = () => {
   return (

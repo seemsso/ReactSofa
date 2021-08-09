@@ -1,10 +1,12 @@
-import m from "./Main.module.scss";
+import { BrowserRouter, Route } from "react-router-dom";
+
 import Header from "../Header/Header";
 import Profile from "../Profile/Profile";
 import Catalog from "../Catalog/Catalog";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
 import Footer from "../Footer/Footer";
-import { BrowserRouter, Route } from "react-router-dom";
+
+import m from "./Main.module.scss";
 
 const Main = () => {
   return (

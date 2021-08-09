@@ -26,9 +26,9 @@ const Catalog = () => {
         </figure>
         <div className={c.container}>
           <Navigation></Navigation>
-          <Route exact path="/catalog" component={Sofas} />
-          <Route exact path="/catalog/sofas" component={Sofas} />
-          <Route exact path="/catalog/chairs" component={Chairs} />
+          <Route exact path="/catalog" render={Sofas} />
+          <Route exact path="/catalog/sofas" render={Sofas} />
+          <Route exact path="/catalog/chairs" render={Chairs} />
         </div>
       </div>
     </BrowserRouter>
