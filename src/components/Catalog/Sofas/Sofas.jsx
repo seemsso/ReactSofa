@@ -1,6 +1,6 @@
 import sof from "./Sofas.module.scss";
 
-const Sofas = () => {
+const Sofas = (props) => {
   return (
     <div className={sof.cont_sofa}>
       <div>
@@ -13,7 +13,6 @@ const Sofas = () => {
         ></img>
         <span>Диван Broad</span>
       </div>
-
       <div>
         <img
           height={435}

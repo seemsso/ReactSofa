@@ -4,7 +4,8 @@ $fs20: 20px;
   font-weight: bold;
   text-align: center;
 }
-
+@mixin flex {
+}
 .cart {
   min-height: 100vh;
 }
@@ -13,23 +14,4 @@ $fs20: 20px;
   font-style: italic;
   font-size: $fs20;
   margin: 20px;
-}
-.list ul {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  @include textcenter;
-  & li {
-    font-size: $fs20 - 2px;
-  }
-  margin-bottom: 40px;
-}
-.grid {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: 2fr repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  & img {
-    width: 100%;
-  }
 }
