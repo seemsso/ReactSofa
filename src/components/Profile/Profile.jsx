@@ -1,59 +1,12 @@
 import GoToCatalog from "./GoToCatalog/GoToCatalog";
 
+import Popular from "./Popular/Popular";
 import prof from "./Profile.module.scss";
 
 const Profile = () => {
   return (
     <main className={prof.main}>
-      <div>
-        <h3 className={prof.h3_container1}>Самые популярные товары</h3>
-      </div>
-      <div className={prof.container1}>
-        <div className={prof.chair1}>
-          <img
-            height={564}
-            widght={400}
-            src="images/chair1.webp"
-            alt="Кресло Purple"
-          ></img>
-          <div>
-            <span>Кресло Purple</span>
-          </div>
-        </div>
-        <div className={prof.chair2}>
-          <img
-            height={564}
-            widght={400}
-            src="images/chair2.webp"
-            alt="Кресло Spacious"
-          ></img>
-          <div>
-            <span>Кресло Spacious</span>
-          </div>
-        </div>
-        <div className={prof.chair3}>
-          <img
-            height={564}
-            widght={400}
-            src="images/chair3.webp"
-            alt="Кресло Beige"
-          ></img>
-          <div>
-            <span>Кресло Beige</span>
-          </div>
-        </div>
-        <div className={prof.sofa1}>
-          <img
-            height={613}
-            widght={1240}
-            src="images/sofa1_.webp"
-            alt="Диван Broad"
-          ></img>
-          <div>
-            <span>Диван Broad</span>
-          </div>
-        </div>
-      </div>
+      <Popular></Popular>
       <div>
         <GoToCatalog></GoToCatalog>
       </div>
