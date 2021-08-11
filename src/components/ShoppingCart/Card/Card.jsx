@@ -1,18 +1,12 @@
 import ImgSofas from "./../../Catalog/Sofas/ImgSofas/ImgSofas";
+
 import scard from "./Card.module.scss";
 
 const Card = () => {
   return (
     <div className={scard.card}>
       <div className={scard.img}>
-        <ImgSofas src={"images/sofa1.webp"} alt={"Диван Broad"}></ImgSofas>{" "}
-        {"span"}
-        <img
-          height={435}
-          width={555}
-          src="images/sofa1.webp"
-          alt="Диван Broad"
-        ></img>
+        <ImgSofas src={"images/sofa1.webp"} alt={""}></ImgSofas>
       </div>
       <div className={scard.prmtrs}>
         <div>

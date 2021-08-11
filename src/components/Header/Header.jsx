@@ -28,17 +28,21 @@ const Header = () => {
           <div className={h.icons}></div>
           <div className={h.shopcart}>
             <NavLink to="/shopcart" activeClassName={h.active_shopcart}>
-              Корзина
+              <img src="images/icons/cart.svg" alt="cart" />
             </NavLink>
           </div>
           <div className={h.connection}>
-            <div className={h.tel}> 8-800-555-35-35</div>
+            <div className={h.tel}>
+              <img src="images/icons/phone.svg" alt="tel" /> 8-800-555-35-35
+            </div>
             <div className={h.call}>Контактный телефон</div>
+          </div>
+          <div className={h.user}>
+            <img src="images/icons/user.svg" alt="user" />
           </div>
         </div>
       </header>
     </div>
   );
 };
-//Need delete style from link..
 export default Header;
