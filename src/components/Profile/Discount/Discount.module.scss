@@ -1,0 +1,37 @@
+@mixin grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1400px;
+  justify-content: center;
+}
+@mixin h3 {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.discounts {
+  @include h3;
+}
+.container3 {
+  @include grid;
+  margin: 40px 0 40px 0;
+  gap: 130px;
+  & .chair_discounts {
+    grid-column: 1 / 2;
+  }
+  & .sofa_discounts {
+    grid-column: 2 / 3;
+  }
+}
+
+@media (max-width: 1399px) {
+  .container3 {
+    & .sale_img {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
