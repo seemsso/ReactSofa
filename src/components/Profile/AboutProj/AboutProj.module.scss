@@ -1,0 +1,53 @@
+@mixin grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1400px;
+  justify-content: center;
+}
+@mixin h3 {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.container2 {
+  @include grid;
+  max-width: 1400px;
+  padding: 0 40px;
+  grid-template-areas: "sofa_img message";
+  & h3 {
+    @include h3;
+    padding-bottom: 15px;
+  }
+  & p {
+    font-size: 15px;
+    font-style: italic;
+    padding: 0 20px;
+  }
+  margin-bottom: 40px;
+}
+.my_data {
+  @include h3;
+}
+.button {
+  @include grid;
+  background-color: bisque;
+}
+.sofa_img {
+  grid-area: sofa_img;
+}
+
+.message {
+  border-radius: 20px;
+  grid-area: message;
+  box-shadow: 3px 3px 3px hsl(300, 23%, 49%);
+  background-color: hsl(160, 72%, 75%);
+}
+
+@media (max-width: 1399px) {
+  .container2 {
+    padding-left: 0px;
+  }
+}
