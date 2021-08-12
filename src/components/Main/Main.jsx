@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <BrowserRouter>
       <div className={m.container}>
-        <Header class="_iconphone"></Header>
+        <Header></Header>
         <div className={m.wrapper}>
           <Route exact path="/" component={Profile} />
           <Route path="/main" component={Profile} />

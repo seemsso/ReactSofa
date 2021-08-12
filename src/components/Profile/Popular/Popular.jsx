@@ -10,7 +10,6 @@ const PopImg = (props) => {
     </div>
   );
 };
-
 const Popular = () => {
   return (
     <div>
