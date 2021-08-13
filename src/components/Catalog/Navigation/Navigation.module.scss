@@ -1,5 +1,38 @@
+$fs16: 16px;
+
 .nav {
-  background-color: hsl(115, 100%, 88%);
+  background-color: hsl(56, 93%, 83%);
   padding: 20px;
   border-radius: 10px;
+  max-height: 600px;
+  position: relative;
+  ul > li {
+    padding: 5px;
+    font-size: $fs16;
+    font-style: italic;
+    &:first-child {
+      font-weight: bold;
+    }
+  }
+  .tab {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: $fs16;
+    font-weight: bold;
+    .sofa,
+    .ch {
+      background-color: hsl(34, 100%, 72%);
+      border-radius: 10px;
+      padding: 5px;
+      width: 40%;
+      text-align: center;
+    }
+  }
+}
+.sticky {
+  max-height: 600px;
+  position: sticky;
+  top: 0;
 }
