@@ -1,0 +1,32 @@
+$fs18: 18px;
+.container {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 555px;
+  border: 1px solid hsl(0, 0%, 86%);
+  box-shadow: 1px 1px 2px 1px hsl(256, 85%, 87%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 60px;
+  border-radius: 30px;
+  .name {
+    font-size: $fs18;
+    font-weight: bold;
+  }
+  .price {
+    font-size: $fs18 + 6px;
+    font-weight: bold;
+    color: hsl(0, 5%, 17%);
+  }
+  .fav {
+    margin-top: 12px;
+  }
+  .cartadd {
+    margin: 3px 0 0 20px;
+  }
+}
