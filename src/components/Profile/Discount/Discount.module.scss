@@ -2,7 +2,7 @@
   display: grid;
   gap: 20px;
   max-width: 1400px;
-  justify-content: center;
+  justify-content: space-around;
 }
 @mixin h3 {
   font-size: 20px;
@@ -18,7 +18,7 @@
 .container3 {
   @include grid;
   margin: 40px 0 40px 0;
-  gap: 130px;
+  gap: 190px;
   & .chair_discounts {
     grid-column: 1 / 2;
   }

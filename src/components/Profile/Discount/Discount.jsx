@@ -8,14 +8,8 @@ const Discount = () => {
           <img
             height={435}
             widght={320}
-            src="images/chair7.webp"
+            src="images/chair7sale.webp"
             alt="chair Rotating Beige"
-          ></img>
-          <img
-            height={63}
-            widght={116}
-            src="images/sale.jpg"
-            alt="sale 30%"
           ></img>
           <div>
             <span>Кресло Rotating Beige</span>
@@ -26,15 +20,8 @@ const Discount = () => {
             className={disc.sale_img}
             height={435}
             widght={555}
-            src="images/sofa4.webp"
+            src="images/sofa4sale.webp"
             alt="sofa Angular"
-          ></img>
-          <img
-            className={disc.sale_img}
-            height={63}
-            widght={116}
-            src="images/sale.jpg"
-            alt="sale 30%"
           ></img>
           <div>
             <span>Диван Angular</span>{" "}

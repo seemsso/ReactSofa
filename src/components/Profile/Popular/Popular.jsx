@@ -2,10 +2,27 @@ import pop from "./Popular.module.scss";
 
 const PopImg = (props) => {
   return (
-    <div>
-      <img height={564} widght={400} src={props.src} alt={props.alt}></img>
+    <div className={pop.container}>
+      <base href="/"></base>
       <div>
-        <span>{props.alt}</span>
+        <img height={564} width={400} src={props.src} alt={props.alt}></img>
+        <div className={pop.footer}>
+          <div>
+            <div className={pop.name}>{props.alt}</div>
+            <div className={pop.fav}>
+              <img src="/images/icons/fav.svg" alt="fav" />
+            </div>
+          </div>
+          <div className={pop.right}>
+            <div>
+              <span className={pop.price}>1199</span>
+              <span>₽</span>
+            </div>
+            <div className={pop.cartadd}>
+              <img src="images/icons/cartadd.svg" alt="add" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

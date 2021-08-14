@@ -15,6 +15,7 @@
 .container2 {
   @include grid;
   max-width: 1400px;
+  width: 100%;
   padding: 0 40px;
   grid-template-areas: "sofa_img message";
   & h3 {
@@ -48,6 +49,6 @@
 
 @media (max-width: 1399px) {
   .container2 {
-    padding-left: 0px;
+    padding: 0 0 40px 0;
   }
 }
