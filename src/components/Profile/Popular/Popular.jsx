@@ -37,7 +37,6 @@ const Popular = () => {
         <PopImg src={"images/chair1.webp"} alt={"Кресло Purple"}></PopImg>
         <PopImg src={"images/chair2.webp"} alt={"Кресло Spacious"}></PopImg>
         <PopImg src={"images/chair3.webp"} alt={"Кресло Beige"}></PopImg>
-
         <div className={pop.sofa1}>
           <img
             height={613}
@@ -45,8 +44,22 @@ const Popular = () => {
             src="images/sofa1_.webp"
             alt="Диван Broad"
           ></img>
-          <div>
-            <span>Диван Broad</span>
+          <div className={pop.mainsofa}>
+            <div>
+              <div className={pop.name}>Диван Broad</div>
+              <div className={pop.fav}>
+                <img src="/images/icons/fav.svg" alt="fav" />
+              </div>
+            </div>
+            <div className={pop.right}>
+              <div>
+                <span className={pop.price}>25999</span>
+                <span>₽</span>
+              </div>
+              <div className={pop.cartadd}>
+                <img src="images/icons/cartadd.svg" alt="add" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

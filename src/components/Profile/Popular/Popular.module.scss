@@ -41,21 +41,21 @@ div img {
 .sofa1 {
   grid-area: sofa1;
 }
-.container {
+.container,
+.mainsofa {
   background-color: hsl(0, 0%, 100%);
-  max-width: 400px;
   border: 1px solid hsl(0, 0%, 86%);
   box-shadow: 1px 1px 2px 1px hsl(256, 85%, 87%);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.footer {
+.footer,
+.mainsofa {
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 60px;
-  border-radius: 30px;
   .name {
     font-size: $fs18;
     font-weight: bold;
