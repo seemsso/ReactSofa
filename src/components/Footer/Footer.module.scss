@@ -25,17 +25,18 @@ $fz18: 18px;
   border-top-right-radius: 20px;
 }
 
-.title {
+.active_main {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 5px;
 }
 .ul {
   @include fbetween;
   & li {
     @include fonts;
-    padding: 30px 60px;
+    padding: 30px 80px;
     font-size: 15px;
   }
   &:hover > li {
