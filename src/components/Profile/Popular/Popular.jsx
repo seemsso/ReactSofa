@@ -1,14 +1,14 @@
 import pop from "./Popular.module.scss";
 
-const PopImg = (props) => {
+const PopImg = (src, alt) => {
   return (
     <div className={pop.container}>
       <base href="/"></base>
       <div>
-        <img height={564} width={400} src={props.src} alt={props.alt}></img>
+        <img height={564} width={400} src={src} alt={alt}></img>
         <div className={pop.footer}>
           <div>
-            <div className={pop.name}>{props.alt}</div>
+            <div className={pop.name}>{alt}</div>
             <div className={pop.fav}>
               <img src="/images/icons/fav.svg" alt="fav" />
             </div>

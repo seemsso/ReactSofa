@@ -2,7 +2,7 @@ import ImgSofas from "./ImgSofas/ImgSofas";
 
 import sof from "./Sofas.module.scss";
 
-const Sofas = (props) => {
+const Sofas = () => {
   return (
     <div className={sof.cont_sofa}>
       <ImgSofas src="images/sofa1.webp" alt="Диван Broad"></ImgSofas>

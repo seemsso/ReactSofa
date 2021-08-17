@@ -1,14 +1,14 @@
 import imgch from "./ImgChairs.module.scss";
 
-const ImgChairs = (props) => {
+const ImgChairs = ({ src, alt }) => {
   return (
     <div className={imgch.container}>
       <base href="/"></base>
       <div>
-        <img height={435} width={320} src={props.src} alt={props.alt}></img>
+        <img height={435} width={320} src={src} alt={alt}></img>
         <div className={imgch.footer}>
           <div>
-            <div className={imgch.name}>{props.alt}</div>
+            <div className={imgch.name}>{alt}</div>
             <div className={imgch.fav}>
               <img src="/images/icons/fav.svg" alt="fav" />
             </div>
