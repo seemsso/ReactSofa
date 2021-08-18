@@ -1,6 +1,6 @@
 import imgch from "./ImgChairs.module.scss";
 
-const ImgChairs = ({ src, alt }) => {
+const ImgChairs = ({ src, alt, price }) => {
   return (
     <div className={imgch.container}>
       <base href="/"></base>
@@ -15,7 +15,9 @@ const ImgChairs = ({ src, alt }) => {
           </div>
           <div className={imgch.right}>
             <div>
-              <span className={imgch.price}>1199</span>
+              <span price={price} className={imgch.price}>
+                {price}
+              </span>
               <span>₽</span>
             </div>
             <div className={imgch.cartadd}>

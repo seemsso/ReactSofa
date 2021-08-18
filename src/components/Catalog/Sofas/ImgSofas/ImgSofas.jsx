@@ -1,6 +1,6 @@
 import sofach from "./ImgSofas.module.scss";
 
-const ImgSofas = ({ src, alt }) => {
+const ImgSofas = ({ src, alt, price }) => {
   return (
     <div className={sofach.container}>
       <base href="/"></base>
@@ -15,7 +15,9 @@ const ImgSofas = ({ src, alt }) => {
           </div>
           <div className={sofach.right}>
             <div>
-              <span className={sofach.price}>1199</span>
+              <span price={price} className={sofach.price}>
+                {price}
+              </span>
               <span>₽</span>
             </div>
             <div className={sofach.cartadd}>

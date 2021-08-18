@@ -5,7 +5,9 @@ const ShoppingCart = () => {
   return (
     <div className={shop.cart}>
       <h2 className={shop.h2}>Корзина</h2>
-      <Card></Card>
+      <div className={shop.items}>
+        <Card></Card>
+      </div>
     </div>
   );
 };

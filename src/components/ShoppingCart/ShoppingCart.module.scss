@@ -8,10 +8,13 @@ $fs20: 20px;
 }
 .cart {
   min-height: 100vh;
-}
-.h2 {
-  @include textcenter;
-  font-style: italic;
-  font-size: $fs20;
-  margin: 20px;
+  .h2 {
+    @include textcenter;
+    font-style: italic;
+    font-size: $fs20;
+    margin: 20px;
+  }
+  .items {
+    overflow: auto;
+  }
 }

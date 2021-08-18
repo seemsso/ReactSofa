@@ -1,6 +1,6 @@
 import pop from "./Popular.module.scss";
 
-const PopImg = (src, alt) => {
+const PopImg = ({ src, alt, price }) => {
   return (
     <div className={pop.container}>
       <base href="/"></base>
@@ -15,7 +15,9 @@ const PopImg = (src, alt) => {
           </div>
           <div className={pop.right}>
             <div>
-              <span className={pop.price}>1199</span>
+              <span price={price} className={pop.price}>
+                {price}
+              </span>
               <span>₽</span>
             </div>
             <div className={pop.cartadd}>
@@ -34,9 +36,21 @@ const Popular = () => {
         <h3 className={pop.h3_container1}>Самые популярные товары</h3>
       </div>
       <div className={pop.container1}>
-        <PopImg src={"images/chair1.webp"} alt={"Кресло Purple"}></PopImg>
-        <PopImg src={"images/chair2.webp"} alt={"Кресло Spacious"}></PopImg>
-        <PopImg src={"images/chair3.webp"} alt={"Кресло Beige"}></PopImg>
+        <PopImg
+          src={"images/chair1.webp"}
+          alt={"Кресло Purple"}
+          price={899}
+        ></PopImg>
+        <PopImg
+          src={"images/chair2.webp"}
+          alt={"Кресло Spacious"}
+          price={1699}
+        ></PopImg>
+        <PopImg
+          src={"images/chair3.webp"}
+          alt={"Кресло Beige"}
+          price={2299}
+        ></PopImg>
         <div className={pop.sofa1}>
           <img
             height={613}

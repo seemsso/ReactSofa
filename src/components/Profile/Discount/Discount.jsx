@@ -11,10 +11,15 @@ const Discount = () => {
           <ImgChairs
             src={"images/chair7sale.webp"}
             alt={"Rotating Beige"}
+            price={1199}
           ></ImgChairs>
         </div>
         <div className={disc.sofa_discounts}>
-          <ImgSofas src={"images/sofa4sale.webp"} alt={"Angular"}></ImgSofas>
+          <ImgSofas
+            src={"images/sofa4sale.webp"}
+            alt={"Angular"}
+            price={26999}
+          ></ImgSofas>
         </div>
       </div>
     </div>
