@@ -11,14 +11,14 @@ const Discount = () => {
           <ImgChairs
             src={"images/chair7sale.webp"}
             alt={"Rotating Beige"}
-            price={1199}
+            price={Math.trunc(1199 * 0.7)}
           ></ImgChairs>
         </div>
         <div className={disc.sofa_discounts}>
           <ImgSofas
             src={"images/sofa4sale.webp"}
             alt={"Angular"}
-            price={26999}
+            price={Math.trunc(26999 * 0.7)}
           ></ImgSofas>
         </div>
       </div>
