@@ -1,6 +1,17 @@
+import React from "react";
+
 import pop from "./Popular.module.scss";
 
-const PopImg = ({ src, alt, price, onFavorite, onCartAdd }) => {
+const PopImg = ({ src, alt, price }) => {
+  const [isFav, setIsFav] = React.useState(false);
+
+  const onFavorite = () => {
+    setIsFav(!isFav);
+  };
+  const [isAdded, setIsAdded] = React.useState(false);
+  const onCartAdd = () => {
+    setIsAdded(!isAdded);
+  };
   return (
     <div className={pop.container}>
       <base href="/"></base>
@@ -10,7 +21,10 @@ const PopImg = ({ src, alt, price, onFavorite, onCartAdd }) => {
           <div>
             <div className={pop.name}>{alt}</div>
             <button className={pop.fav} onClick={onFavorite}>
-              <img src="/images/icons/fav.svg" alt="fav" />
+              <img
+                src={isFav ? "images/icons/favb.svg" : "/images/icons/fav.svg"}
+                alt="fav"
+              />
             </button>
           </div>
           <div className={pop.right}>
@@ -21,7 +35,14 @@ const PopImg = ({ src, alt, price, onFavorite, onCartAdd }) => {
               <span>₽</span>
             </div>
             <button className={pop.cartadd} onClick={onCartAdd}>
-              <img src="images/icons/cartadd.svg" alt="add" />
+              <img
+                src={
+                  isAdded
+                    ? "images/icons/cartadded.svg"
+                    : "images/icons/cartadd.svg"
+                }
+                alt="add"
+              />
             </button>
           </div>
         </div>
