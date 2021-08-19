@@ -1,6 +1,6 @@
 import imgch from "./ImgChairs.module.scss";
 
-const ImgChairs = ({ src, alt, price }) => {
+const ImgChairs = ({ src, alt, price, onFavorite, onCartAdd }) => {
   return (
     <div className={imgch.container}>
       <base href="/"></base>
@@ -9,9 +9,9 @@ const ImgChairs = ({ src, alt, price }) => {
         <div className={imgch.footer}>
           <div>
             <div className={imgch.name}>{alt}</div>
-            <div className={imgch.fav}>
+            <button className={imgch.fav} onClick={onFavorite}>
               <img src="/images/icons/fav.svg" alt="fav" />
-            </div>
+            </button>
           </div>
           <div className={imgch.right}>
             <div>
@@ -20,9 +20,9 @@ const ImgChairs = ({ src, alt, price }) => {
               </span>
               <span>₽</span>
             </div>
-            <div className={imgch.cartadd}>
+            <button className={imgch.cartadd} onClick={onCartAdd}>
               <img src="images/icons/cartadd.svg" alt="add" />
-            </div>
+            </button>
           </div>
         </div>
       </div>

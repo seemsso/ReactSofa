@@ -9,9 +9,9 @@ const ImgSofas = ({ src, alt, price }) => {
         <div className={sofach.footer}>
           <div>
             <div className={sofach.name}>{alt}</div>
-            <div className={sofach.fav}>
+            <button className={sofach.fav}>
               <img src="/images/icons/fav.svg" alt="fav" />
-            </div>
+            </button>
           </div>
           <div className={sofach.right}>
             <div>
@@ -20,9 +20,9 @@ const ImgSofas = ({ src, alt, price }) => {
               </span>
               <span>₽</span>
             </div>
-            <div className={sofach.cartadd}>
+            <button className={sofach.cartadd}>
               <img src="images/icons/cartadd.svg" alt="add" />
-            </div>
+            </button>
           </div>
         </div>
       </div>

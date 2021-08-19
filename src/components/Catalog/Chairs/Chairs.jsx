@@ -18,7 +18,13 @@ const Chairs = () => {
     <div className={ch.cont_chairs}>
       <div className={ch.section}>
         {arrChairs.map((obj) => (
-          <ImgChairs src={obj.src} alt={obj.alt} price={obj.price}></ImgChairs>
+          <ImgChairs
+            src={obj.src}
+            alt={obj.alt}
+            price={obj.price}
+            onFavorite={() => console.log("Закладки")}
+            onCartAdd={() => console.log("Корзина")}
+          ></ImgChairs>
         ))}
       </div>
     </div>
