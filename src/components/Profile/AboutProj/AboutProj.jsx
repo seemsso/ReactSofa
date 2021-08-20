@@ -18,7 +18,7 @@ const AboutProj = () => {
           <p>Если у Вас остались вопросы,свяжитесь со мной</p>
           <div className={abp.my_data}>Мои данные</div>
           <div>
-            <button>Контакты</button>
+            <a href="https://t.me/SoCoolIdea">Telegram</a>
           </div>
         </div>
       </div>

@@ -19,10 +19,11 @@ $fz18: 18px;
   @include fbetween;
   align-items: center;
   text-align: center;
-  background-color: hsl(201, 52%, 58%);
+  background-color: hsl(197, 100%, 67%);
   padding: 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: hsl(300, 98%, 21%);
 }
 
 .active_main {
@@ -39,7 +40,7 @@ $fz18: 18px;
     padding: 30px 80px;
     font-size: 15px;
   }
-  &:hover > li {
+  :hover > li {
     @include textdecor;
   }
 }

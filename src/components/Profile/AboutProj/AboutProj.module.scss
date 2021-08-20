@@ -17,6 +17,7 @@
   max-width: 1400px;
   width: 100%;
   padding: 0 40px;
+  color: hsl(0, 0%, 100%);
   grid-template-areas: "sofa_img message";
   & h3 {
     @include h3;
@@ -28,6 +29,10 @@
     padding: 0 20px;
   }
   margin-bottom: 40px;
+  a {
+    margin-left: 20px;
+    @include h3;
+  }
 }
 .my_data {
   @include h3;
@@ -44,7 +49,7 @@
   border-radius: 20px;
   grid-area: message;
   box-shadow: 3px 3px 3px hsl(300, 23%, 49%);
-  background-color: hsl(160, 72%, 75%);
+  background-color: hsl(197, 100%, 67%);
 }
 
 @media (max-width: 1399px) {
